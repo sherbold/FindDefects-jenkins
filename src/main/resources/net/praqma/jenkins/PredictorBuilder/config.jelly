@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="Path to Source-Meter"  field="sourceMPath" >
+        <f:textbox default="C:/SourceMeter-8.1.0-x64-windows/Java" />
+    </f:entry>
+
+    <f:entry title="Base Directory (Jenkins Job's Name)" field="baseProject">
+        <f:textbox default="the demo" />
+    </f:entry>
+
+	<f:entry title="Path To Jenkins"  field="pathToJenkins" >
+        <f:textbox default="C:\\Program Files (x86)\\Jenkins\\workspace" />
+    </f:entry>
+	<f:entry title="Predictor Api URL"  field="predictorApiUrl" >
+        <f:textbox default="http://localhost:9090/DefectPredictorApi/api/predictor_service" />
+    </f:entry>
+	
+</j:jelly>   

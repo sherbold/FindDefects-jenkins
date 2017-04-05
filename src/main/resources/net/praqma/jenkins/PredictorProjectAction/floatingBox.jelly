@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:local="local">    
+  
+
+<table width="275" border="1">
+  <tr>
+    <td colspan="2">Defects Prediction Statistics</td>
+  </tr>
+  <tr>
+    <td width="179">Total LOCs</td>
+    <td width="80">${from.getTotalLinesOfCode()}</td>
+  </tr>
+  <tr>
+    <td>Total LOCs Processed</td>
+    <td>${from.getTotalLinesOfScanned()}</td>
+  </tr>
+  <tr>
+    <td>Total no of defects </td>
+    <td>${from.getTotalNumberOfDefects()}</td>
+  </tr>
+</table>
+    
+</j:jelly>   
